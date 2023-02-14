@@ -24,7 +24,7 @@
 /*--------------main--------------------*/
 
 .conteudo{
-   
+    overflow-y: auto;
     align-items: center;
 	background-image: url('./img/logo-opaca.png');
 	background-attachment: fixed;
