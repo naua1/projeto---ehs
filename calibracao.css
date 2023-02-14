@@ -1,0 +1,105 @@
+
+/*---------------------corpo do main-----------------------------*/
+.lista{
+    align-items: center;
+	background-attachment: fixed;
+    background-image: url('./img/logo-opaca.png');
+	background-position-x: center;
+	background-position-y: 80%;
+	background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+/*---------------------h2-----------------------------*/
+.conteudo__titulo__calibracao{
+    color:#2596be;
+    font-weight: 400;
+    margin: 2% 0 2% 0;
+}
+
+/*---------------------tabela-----------------------------*/
+
+.tabela{
+    width: 80%;
+}
+.tabela__celula:first-child{
+    border-radius: 10px 0 0 0;
+    width: 25%;
+}
+
+.tabela__celula:last-child{
+     border-radius: 0px 10px 0 0;
+}
+.tabela__celula{
+    color:white;
+    background-color:#2596be;
+    height: 30px;
+    width: 15%;
+
+}
+.tabela__titulo{
+    
+        margin-left: 8%;
+         
+}
+.tabela__informacao:first-child{
+    width: 25%;
+}
+.tabela__informacao:last-child{
+    background-color: transparent;
+}
+.tabela__informacao{
+    background-color: #CAE0F7;
+    height: 30px;
+    width: 15%;
+}
+
+.link{
+    background-color: white;
+    border:1px solid;
+    height: 15px;
+    width: 30px;
+}
+/*---------------------telas com mais de 2300 width-----------------------------*/
+
+@media (min-width:2300px) {
+    
+   *{
+        font-size: 1.7rem;
+    }
+    .tabela__titulo{
+        font-size: 1.5rem;
+   }
+
+   .link{
+       height: 30px;
+       width: 60px;
+
+}
+}
+/*--------------------entre 375 w 492 de width-----------------------------*/
+
+@media (min-width:375px) and (max-width:492px){
+   .tabela__titulo{
+        font-size: .8rem;
+   }
+}
+
+@media (max-width:375px){
+    .tabela__titulo{
+         font-size: .6rem;
+    }
+
+    .conteudo__titulo__calibracao{
+        color:#2596be;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 2% 0 2% 0;
+    }
+
+ }

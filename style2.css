@@ -1,0 +1,302 @@
+
+/* Cabeçalho da página */
+.header {
+	height: 10vh;
+	background-image: linear-gradient(90deg, #c7dde5, #acdaeb, #99d9ed, #66d7f3, #00d4ff, #2596be);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 8px 5%;
+}
+
+.header__logo {
+	width: 10%;
+	text-align: center;
+}
+
+.header__titulo {
+	color: white;
+	font-size: 1.6em;
+	margin-right: 25%;
+    
+}
+/*--------------main--------------------*/
+
+.conteudo{
+   
+    align-items: center;
+	background-image: url('./img/logo-opaca.png');
+	background-attachment: fixed;
+	background-position-x: center;
+	background-position-y: 80%;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 30px;
+	height: 85vh;
+	width: 100%;
+}
+
+/*--------------imagem da maquina--------------------*/
+.conteudo__imagem{
+    background-color: white;
+    border: #00d4ff 3px dashed;
+    height: 70%;
+    position: absolute;
+    right: 9%;
+    top: 0%;
+    width: 29%;
+}
+
+/*--------------titulo h2--------------------*/
+.conteudo__titulo{
+    color:#2596be;
+    font-weight: 400;
+    margin: 2% 0 2% 0;
+}
+/*-------------selecionar o equipamento---------------------*/
+.tipoEquipamento{
+    
+    align-items: center;
+    background-color: #E7ECEF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px #2596be;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-bottom: 2%;
+    width: 40vw;
+    
+}
+
+.tipoEquipamento__paragrafo{
+    font-size: 20px;
+	font-weight: 400;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+.tipoEquipamento__input{
+    border-color:#2596be;
+    border-radius: 5px;
+    height: 40%;
+    margin-bottom: 2%;
+    outline: 0;
+    width: 60%;
+
+}
+
+/*--------------parte formulario--------------------*/
+
+.formulario{
+    
+    display: flex;
+    height: 60%;
+    justify-content: center;
+    width: 80%;
+      
+}
+.formulario__centralizando{
+    position: relative;
+    width: 80%;
+    
+}
+
+.formulario__input{
+    background-color: #DBDBD1;
+    border: 1px solid #2596be;
+    border-radius: 5px;
+    height: 70%;
+    margin-bottom: 2%;
+    outline: 0;
+    position: relative;
+    top:10%;
+    width: 50%;
+    
+}
+
+.formulario__span{
+
+    color:#2596be;
+    font-size: 1.4rem;
+    font-weight: 400;
+    position: relative;
+    top:10%;
+   
+}
+
+/*--------------class prontas--------------------*/
+.input--pequeno {	width: 5%; }
+.input--medio { width: 15%; }
+.input--grande { width: 35%; }
+
+.grid{
+    display: grid;
+    gap: 1% 0.5%;
+    grid-template-columns: .08fr 1fr;
+    grid-template-rows: repeat(9 5fr);
+    
+}
+
+.grid--col--4{
+    display: grid;
+    gap:3.05%;
+    grid-column: repeat(4 1fr);
+    grid-template-rows: 1fr;
+    
+}
+.flex--row{
+    display: flex;
+    
+}
+
+.margin--1{
+    margin-right: 1%;
+}
+
+.margin--10{
+margin-left: 10%;
+
+}
+
+/*-----------------botoes--------------------------*/
+.botoes{
+    display: flex;
+    justify-content: end;
+}
+
+.botoes:last-child{
+    margin-right: 10%;
+}
+
+.botoes--preto{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px  solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color:white;
+    font-size: 1rem;
+    height: 2em;
+    margin-right:1%;
+    outline:0;
+    text-align: center;
+    width: 6em;
+}
+
+.color{
+    color:#2596be;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+/*----------------------para telas com mais de 2300 de width--------------------------------------------------------*/
+
+@media (min-width:2300px) {
+
+    .tipoEquipamento__input{
+   
+        font-size: 1.7rem; 
+}
+    
+.formulario__input{
+    font-size: 1.7rem;
+}
+
+
+}
+
+/*----------------------para telas wntre 768 e 1551 de width--------------------------------------------------------*/
+    @media (min-width:768px) and (max-width:1551px) {
+    
+    .conteudo__imagem{
+        right: -23%;
+        width: 40%;
+    }
+    .input--pequeno{
+        width: 25%;
+    }
+
+}
+/*----------------------para telas wntre 628 e 768 de width--------------------------------------------------------*/
+@media (min-width:629px) and ( max-width:768px){
+
+    .tipoEquipamento{
+        width: 50vw;
+    }
+    .conteudo__imagem{
+        width: 40%;
+        right: -23%;
+    }
+    .input--pequeno{
+        width: 20%;
+    }
+}
+
+    @media (max-width:628px){
+    .header{
+        padding: 0;
+    }
+
+    .header__titulo {
+        text-align: center;
+        font-size: 1rem;
+        margin-right: 15%; 
+    }
+
+    .tipoEquipamento{
+        width: 90vw;
+        height: 10vh;
+    }
+
+        .input--grande{
+            width: 70%;
+        }
+        .input--pequeno{
+            width: 30%;
+        }
+        .input--medio{
+            width: 50%;
+        }
+        .grid--col--4{
+            
+            gap:5%;   
+        }
+        .margin--1{
+            margin-right: 10%;
+        }
+        
+        .margin--10{
+        margin-left: 3%;
+        
+        }
+        .formulario__centralizando{
+            
+            width: 100%;
+            
+        }
+        .botoes{
+            justify-content: center;
+        }
+        .botoes:last-child{
+            margin-right: 0;
+        }
+
+        .conteudo__imagem{
+
+            width: 51%;
+            height: 34%;
+            top:100%;
+            right: 24%;
+            
+        }
+        .grid{
+            display: grid;
+            grid-template-rows: repeat(9 5fr);
+            grid-template-columns: .08fr 1fr;
+            gap: 1% 0.5%;
+            
+        }
+}
+

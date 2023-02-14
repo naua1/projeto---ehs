@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de EHS</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/logo.png" alt="Logo">
+        <h1 class="header__titulo">Sistema De Gerenciamento De EHS</h1>
+
+      
+
+    </header>
+    <main class="conteudo ">
+
+        
+
+        <h2 class="conteudo__titulo">Consulta De Equipamentos</h2>
+
+        <section class="tipoEquipamento">
+            <p class="tipoEquipamento__paragrafo">Equipamento</p>
+            <select name="equipamento" id="tipo" class="tipoEquipamento__input">
+                <option value="carro">Selecione Equípamento</option>
+                <option value="carro">Carro</option>
+                <option value="moto">Moto</option>
+
+            </select>
+        </section>
+
+        <section class="formulario">
+            <div class="formulario__centralizando   grid" >
+               
+                <div class="conteudo__imagem"></div>
+                         <label for="codigo" class="formulario__paragrafo"> <span class="formulario__span">Codigo</span></label>  
+                <input type="text" class="formulario__input input--pequeno" id="codigo">
+                    
+            
+                <label for="modelo"> <span class="formulario__span">Modelo</span></label>  
+                <input type="text" class="formulario__input input--grande" id="modelo">
+            
+           
+                <label for="serie"><span class="formulario__span">Serie</span></label>  
+                <input type="text" class="formulario__input input--medio" id="serie">
+          
+            
+                <label for="tipo"> <span class="formulario__span">Tipo</span></label>  
+                <div class="flex--row">
+                 <input type="text" class="formulario__input input--pequeno margin--1" id="tipo">
+                <input type="text" class="formulario__input input--" id="tipo">
+            </div>
+               
+       
+                <label for="fabricante"> <span class="formulario__span">Fabricante</span></label>  
+                <div class="flex--row">
+                    <input type="text" class="formulario__input input--medio margin--1" id="fabricante">
+                <input type="text" class="formulario__input input--grande" id="fabricante">
+            </div>
+           
+            
+                <label for="capacidades "><span class="formulario__span margin--5">Capacidades </span></label>  
+                <div class="flex--row  grid--col--4 margin--10">
+                <label for="min"><span class="formulario__span margin--5">Min </span></label>  
+                <input type="text" class="formulario__input input--medio" id="min">
+                <label for="max"><span class="formulario__span margin--5">Max </span></label>  
+                <input type="text" class="formulario__input input--medio" id="max">
+            </div>
+          
+                
+                <label for="escala"><span  class="formulario__span">Escala </span></label>  
+                <input type="text" class="formulario__input input--grande" id="escala">
+                
+           
+
+            <label for="local"><span  class="formulario__span">Localização </span></label>  
+            <div class="flex--row">
+                <input type="text" class="formulario__input input--medio margin--1" id="local">
+                <input type="text" class="formulario__input input--grande" id="local">
+            </div>  
+          
+            
+                <label for="situacao"> <span class="formulario__span">Situaçâo</span></label>  
+                <select name="situacao" id="si" class="formulario__input input--medio">
+                    <option value="ativo">Ativo</option>
+                    <option value="desativado">Desativado</option>
+    
+                </select>
+           
+            
+        </div>
+            
+
+        </section>
+
+    </main>
+    <nav class="botoes">
+        <button class="botoes--preto"> <a href="calibracao.html" target="_blank"> Calibração</a></button>
+        <button class="botoes--preto">Limpar</button>
+        <button class="botoes--preto">Cancelar</button>
+    </nav>
+
+   
+    
+</body>
+</html>
